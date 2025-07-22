@@ -36,7 +36,7 @@ body {
 /* Header/Hero Section */
 #hero {
     background: linear-gradient(135deg, var(--oxford-blue), var(--space-cadet));
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,7 +169,7 @@ body {
 
 /* Section Styling */
 section {
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 section:nth-child(even) {
