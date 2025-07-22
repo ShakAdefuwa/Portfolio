@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben's Pizza Menu</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+        }
+        
+        .menu-container {
+            width: 500px;
+            background-color: #d62828;
+            color: #ffd700;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .menu-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 54px;
+            text-align: center;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            letter-spacing: 1px;
+        }
+        
+        .menu-section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        
+        .menu-item {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .item-name {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        
+        .item-description {
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+        
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 5px;
+        }
+        
+        .size-label {
+            font-weight: 600;
+            font-size: 16px;
+        }
+        
+        .price {
+            font-weight: 600;
+            font-size: 18px;
+        }
+        
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, rgba(255, 215, 0, 0.5), transparent);
+            margin: 25px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1 class="menu-title">BEN'S PIZZA</h1>
+        
+        <div class="menu-section">
+            <h2 class="section-title">SPECIAL PIZZA</h2>
+            <div class="menu-item">
+                <div class="item-name">Margherita</div>
+                <div class="item-description">Tomato sauce, mozzarella, oregano</div>
+                <div class="price-row">
+                    <span class="size-label">REG</span>
+                    <span class="price">13</span>
+                </div>
+                <div class="price-row">
+                    <span class="size-label">LARGE</span>
+                    <span class="price">15</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="menu-section">
+            <h2 class="section-title">SIGNATURE PIZZA</h2>
+            <div class="menu-item">
+                <div class="item-name">Pepperoni</div>
+                <div class="item-description">Mozzarella, pepperoni</div>
+                <div class="price-row">
+                    <span class="size-label">REG</span>
+                    <span class="price">15</span>
+                </div>
+                <div class="price-row">
+                    <span class="size-label">LARGE</span>
+                    <span class="price">17</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="menu-section">
+            <h2 class="section-title">BEVERAGES</h2>
+            <div class="menu-item">
+                <div class="item-name">Coca Cola</div>
+                <div class="price-row">
+                    <span class="size-label">33CL</span>
+                    <span class="price">3</span>
+                </div>
+                <div class="price-row">
+                    <span class="size-label">1,5 L</span>
+                    <span class="price">6</span>
+                </div>
+                <div class="item-description">Regular or diet</div>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="menu-section">
+            <h2 class="section-title">SIDES</h2>
+            <div class="menu-item">
+                <div class="item-name">Garlic Bread</div>
+                <div class="item-description">Ciabatta with garlic butter and parsley</div>
+                <div class="price-row">
+                    <span class="size-label"></span>
+                    <span class="price">6</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="menu-section">
+            <h2 class="section-title">DESSERTS</h2>
+            <div class="menu-item">
+                <div class="item-name">Chocolate Brownie</div>
+                <div class="price-row">
+                    <span class="size-label"></span>
+                    <span class="price">5</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

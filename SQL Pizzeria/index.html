@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben's Pizza Analytics Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ben's Pizza Analytics Project</h1>
+            <p>Data-Driven Insights for Restaurant Performance</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#business-context">Business Context</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#insights">Key Insights</a></li>
+                <li><a href="#reflections">Reflections</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="banner" class="banner-section">
+        <div class="container">
+            <img src="Banner.png" alt="Ben's Pizza Banner" class="banner-img">
+        </div>
+    </section>
+
+    <section id="dashboard" class="dashboard-hero">
+        <div class="container">
+            <h2>Interactive Power BI Dashboard</h2>
+            <p>Explore the interactive dashboard below. Click on any element to filter the data.</p>
+            <div class="dashboard-container">
+                <iframe title="Bens_pizza" width="800" height="836" src="https://app.powerbi.com/view?r=eyJrIjoiZjU4ZjM3NTQtNTM1NC00Yzc5LThkYTctZWYzOWQ1NjdiYzQ2IiwidCI6IjZlZmQwZjIwLTU3YzgtNDQ0Ny1iNTNmLTAwZDQ5OTJjYTUwYiJ9" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="overview">
+        <div class="container">
+            <h2 class="section-title">Business Context & Objectives</h2>
+            
+            <div class="business-context-container">
+                <div class="business-context-layout">
+                    <!-- Left side - Initiative Content -->
+                    <div class="initiative-content">
+                        <div class="menu-redesign-header">
+                            <div class="header-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h3>Menu Redesign Initiative</h3>
+                        </div>
+                        
+                        <p>This month held particular importance as it marked the launch of their newly shortened menu, a strategic move to reinforce brand identity and improve operational efficiency.</p>
+                        
+                        <p>With these changes trialed across NYC and PHL branches, management wanted a way to evaluate impact. I was tasked with building a clear, visual summary to communicate outcomes to staff and stakeholders alike.</p>
+                        
+                        <!-- Metrics Grid 2x2 -->
+                        <div class="metrics-grid-2x2">
+                            <!-- Project Scope -->
+                            <div class="metric-card">
+                                <div class="metric-header">PROJECT SCOPE</div>
+                                <div class="metric-value">2</div>
+                                <div class="metric-label">CITIES</div>
+                            </div>
+                            
+                            <!-- Timeline -->
+                            <div class="metric-card">
+                                <div class="metric-header">TIMELINE</div>
+                                <div class="metric-value">Jan</div>
+                                <div class="metric-label">LAUNCH MONTH</div>
+                            </div>
+                            
+                            <!-- Financial Impact -->
+                            <div class="metric-card">
+                                <div class="metric-header">FINANCIAL IMPACT</div>
+                                <div class="metric-subheader">January Revenue</div>
+                                <div class="metric-value-container">
+                                    <span class="metric-value revenue">$76,937</span>
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="metric-label">GOAL: 68000 (+13.14%)</div>
+                            </div>
+                            
+                            <!-- Customer Preference -->
+                            <div class="metric-card">
+                                <div class="metric-header">CUSTOMER PREFERENCE</div>
+                                <div class="metric-value">Pepperoni</div>
+                                <div class="metric-label">MOST POPULAR ITEM</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right side - Menu Image -->
+                    <div class="menu-display">
+                        <img src="menu-snip-v2.png" alt="Ben's Pizza Menu" class="menu-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process">
+        <div class="container">
+            <h2>Project Process</h2>
+            <div class="process-container">
+                <div class="process-step">
+                    <div class="icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Data Generation</h3>
+                    <p>Used AI and Python to generate a deliberately flawed dataset to simulate real-world data challenges</p>
+                </div>
+                <div class="process-step">
+                    <div class="icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Data Cleaning</h3>
+                    <p>Cleaned and normalized data in MySQL, addressing various data quality issues</p>
+                </div>
+                <div class="process-step">
+                    <div class="icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>Data Import</h3>
+                    <p>Imported data into Power BI, ensuring correct table relationships and data model</p>
+                </div>
+                <div class="process-step">
+                    <div class="icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Visualization</h3>
+                    <p>Created interactive visuals highlighting key performance metrics across both locations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="data-cleaning">
+        <div class="container">
+            <h2>Data Cleaning Process</h2>
+            <div class="cleaning-content">
+                <p>The dataset contained several deliberate issues that needed to be addressed:</p>
+                <ul>
+                    <li><strong>NULL values</strong> - Identified and handled inappropriate NULL values in various fields</li>
+                    <li><strong>Inconsistent categories</strong> - Standardized item categories across the dataset</li>
+                    <li><strong>Price anomalies</strong> - Corrected outlier prices (e.g., items priced at $1500 or $0)</li>
+                    <li><strong>Missing timestamps</strong> - Added missing created_at values based on similar orders</li>
+                    <li><strong>City name inconsistencies</strong> - Standardized city names (e.g., "Philly" vs "Philadelphia")</li>
+                    <li><strong>Order total miscalculations</strong> - Recalculated and corrected order totals</li>
+                </ul>
+                <p>After cleaning, the data was normalized to 3NF (Third Normal Form) by creating separate tables for customers, menu items, addresses, orders, and order items.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="insights">
+        <div class="container">
+            <h2>Key Insights</h2>
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <h3>Menu Optimization Impact</h3>
+                    <p>Analysis of how the shortened menu affected overall sales and operational efficiency</p>
+                </div>
+                <div class="insight-card">
+                    <h3>Location Performance</h3>
+                    <p>Comparison between NYC and Philadelphia locations, highlighting differences in customer preferences</p>
+                </div>
+                <div class="insight-card">
+                    <h3>Product Popularity</h3>
+                    <p>Identification of best-selling items and categories across locations</p>
+                </div>
+                <div class="insight-card">
+                    <h3>Time Patterns</h3>
+                    <p>Analysis of peak ordering times and days to optimize staffing and inventory</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reflections">
+        <div class="container">
+            <h2>Reflections & Learnings</h2>
+            <div class="reflections-content">
+                <p>It was an interesting experience to create a dashboard with a business's goals in mind. It made me factor in relevancy and significance, as it wasn't just about making aesthetically pleasing visuals, but creating ones that made sense in context.</p>
+                <p>Though I generated the dataset, in hindsight it was more limited than I expected. This highlighted the importance of a well-rounded dataset, since the more data you collect, the broader and more valuable the insights you can deliver.</p>
+                <p>The project reinforced the importance of data quality and proper normalization before visualization, as clean data is essential for accurate insights.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="technical-details">
+        <div class="container">
+            <h2>Technical Details</h2>
+            <div class="tech-content">
+                <div class="tech-item">
+                    <h3>MySQL Data Cleaning</h3>
+                    <p>Used SQL queries to identify and fix data issues, normalize the database structure, and prepare data for visualization</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Power BI Development</h3>
+                    <p>Created data model relationships, developed DAX measures, and designed interactive visualizations</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Data Normalization</h3>
+                    <p>Implemented Third Normal Form (3NF) to optimize database structure and reduce redundancy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-info">
+                    <h2>Shak Adefuwa</h2>
+                    <p class="contact-title">Data Analytics Professional</p>
+                    <p class="contact-description">
+                        Passionate about transforming data into actionable business insights. 
+                        Experienced in SQL, Power BI, and business intelligence solutions 
+                        that drive operational excellence and strategic decision-making.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:sadefuwa@gmail.com">sadefuwa@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+447399769306">07399 769 306</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/shakadefuwa/" target="_blank">linkedin.com/in/shakadefuwa</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-photo">
+                    <img src="IMG-20250707-WA0003[1].jpg" alt="Shak Adefuwa" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p> 2025 Ben's Pizza Analytics Project</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

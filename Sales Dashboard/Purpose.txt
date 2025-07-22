@@ -1,0 +1,14 @@
+Discount Review: 
+A mid-sized online retailer operating across the UK wanted to better understand sales performance across product categories and evaluate the impact of discounts on revenue generation. As part of their 2024 strategic review, the business needed clear visibility into category-level trends, customer engagement, and promotional efficiency.
+
+Dashboard Goals:
+
+Track year-to-date revenue, customer growth, and daily performance
+
+Compare category sales trends across months
+
+Analyse discount effectiveness by category
+
+Identify record performance days and highlight key drivers
+
+Spot underperforming segments despite promotional efforts

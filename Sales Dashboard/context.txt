@@ -1,0 +1,22 @@
+Business Context & Objectives
+
+I decided to refurbish this dashboard to not only clean it up and make it look more professional, but to also think about it more from a business perspective.
+This led me to a much less cluttered dashboard that still retained key performance metrics but now with sharper focus on the more meaningful areas of the dataset. 
+
+Project Overview & Process
+
+Imported data with Python, checked for duplicate and empty cells, corrected formatting issues
+
+Imported data into Power BI
+
+Produced a rough version of the dashboard, using essentially random visuals
+
+At a later date, refurbished it with relevant visuals while improved the general aesthetic
+
+
+Reflections & Learnings
+
+The initial experience of creating this dashboard was an attempt at experimenting with a random dataset and seeing what visuals I could produce. I ended up with a mess of a dashboard, filled with meaningless or boring visuals that told no story.
+
+ 
+After working with Ben's Pizza, I had a much clearer idea of what the purpose of a dashboard is. It was no longer about the sheer mass of information, but more about presenting data in a way that's actually useful. 

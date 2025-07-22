@@ -1,0 +1,35 @@
+1. 
+Importing pandas
+Importing the csv of the e-commerce dataset
+Checking the data types of the columns for any potential issues 
+
+2. 
+
+There's an Issue!Data type "Purchase_Date" is being read as an object, not a date. This will produce issues with code and eventually visuals if not converted correctly.
+
+I will explain the code I used to resolve this:
+
+parse_dates=['Purchase_Date'] - used while reading the csv, initial conversion from object (string) to datetime
+ (df['Purchase_Date') - places this column into a Pandas DataFrame
+
+pd.to_datetime() - functions as a double check, to ensure all dates are converted to datetime date type
+ '%d/%m/%Y' - specifies the format of the values within the column 
+
+errors = 'coerce' - if a value cannot be converted, return "NaT" (Not a Time), a missing or invalid datetime value.
+
+The remaining code is to produce the output, allowing us to check if our code was successful in converting all dates, as well as saving it as a new csv file. 
+
+3. 
+
+We run a final check to see if the data is clean. 
+ 
+
+parse_dates - ensuring that while it reads the data file, 'Purchase_date' is understood as datetime (to prevent misinterpretation)
+
+
+print(f"Shape of Dataframe: {df.shape}") - returns a list of the column names in the data frame
+ 
+Output: Are there any Null values in these columns?
+
+Output: Are there duplicate rows, if so, how many?
+
