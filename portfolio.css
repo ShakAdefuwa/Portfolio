@@ -648,17 +648,25 @@ footer p {
 }
 
 @media (max-width: 768px) {
+    #hero {
+        min-height: 60vh;
+    }
+
     #hero h1 {
         font-size: 2.5rem;
     }
-    
+
     #hero h2 {
         font-size: 1.4rem;
     }
-    
+
     .profile-image {
         width: 150px;
         height: 150px;
+    }
+
+    section {
+        padding: 40px 0;
     }
     
     #navbar ul {
