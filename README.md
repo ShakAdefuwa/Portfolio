@@ -120,10 +120,6 @@ A modern, responsive portfolio website showcasing data analysis projects and pro
 - [ ] Add dark mode toggle
 - [ ] Implement contact form functionality
 
-## 📄 License
-
-This portfolio is for personal use by Shak Adefuwa. The code structure can be used as a template with appropriate attribution.
-
 ---
 
 **Created by**: Shak Adefuwa  
