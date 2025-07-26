@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Professional Survey - Analytics Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Data Professional Survey</h1>
+            <p>Comprehensive analysis of data professional satisfaction, career trends, and industry insights</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#objective">Objective</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#insights">Key Insights</a></li>
+                <li><a href="#reflections">Reflections</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="dashboard-section">
+        <div class="container">
+            <h2>Power BI Dashboard</h2>
+            <div class="dashboard-container">
+                <iframe title="Data Professional Survey updated" width="800" height="836" src="https://app.powerbi.com/view?r=eyJrIjoiMDJhOGQyM2UtMTRlMS00NGRkLTk5OTQtZjFjN2VlYTQ5NzFkIiwidCI6IjZlZmQwZjIwLTU3YzgtNDQ0Ny1iNTNmLTAwZDQ5OTJjYTUwYiJ9" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+            <p class="dashboard-note">Explore the interactive dashboard above. Click on any element to filter the data and discover insights.</p>
+        </div>
+    </section>
+
+    <!-- Survey Objective Section -->
+    <section id="objective" class="objective-section">
+        <div class="container">
+            <h2>Survey Objective</h2>
+            <div class="objective-content">
+                <h3>Role Satisfaction</h3>
+                <p>This poll was conducted to better understand how data professionals feel about their current situations. Considering the recent popularity and boom in data roles, it's important to give those looking to join the field some well-needed perspective.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Process Section -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <h2>Project Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Data Collection</h3>
+                        <p>Downloaded Data from Youtube video</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Data Import</h3>
+                        <p>Imported Data into Power BI</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Data Transformation</h3>
+                        <p>Used PowerQuery and DAX to transform data, allowing for better visuals</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Dashboard Creation</h3>
+                        <p>Created a Multi Page dashboard that gives insights about data analysts globally</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Manipulation Section -->
+    <section class="manipulation-section">
+        <div class="container">
+            <h2>Manipulating Data</h2>
+            <div class="manipulation-content">
+                <p>I used Powerquery, Measures, and DAX to manipulate my columns to open the door for more interesting insights and visuals. The following are a few examples:</p>
+                <ul class="manipulation-list">
+                    <li>Created a separate table for satisfaction scores, allowing for cleaner comparison between professions</li>
+                    <li>Used Measures that gave the name of the Country that is most or least satisfied (by comparing satisfaction totals)</li>
+                    <li>Simplified the data by combining categories/results. For example, the country column had respondents across mainland European countries in low volume but evenly distributed. It became more appropriate for my visuals if I grouped them together under Europe.</li>
+                    <li>Strangely, the "salary" column came as a range, e.g. "80k-100k", so I used a measure that took the middle value for this range (90k) and converted it to a real number (90,000).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Insights Section -->
+    <section id="insights" class="insights-section">
+        <div class="container">
+            <h2>Key Insights</h2>
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <div class="insight-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Profession Analysis</h3>
+                    <p>Which data professions were most well-paid and most satisfied</p>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Geographic Satisfaction</h3>
+                    <p>Which countries were most and least satisfied</p>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Demographics</h3>
+                    <p>What are the demographics of respondents, insights into their education, career choices and preferences</p>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Industry Complexity</h3>
+                    <p>The data highlighted how difficult it was for respondents to define the industry they worked in, with most opting to use "Other" and saying it's a combination of multiple industries</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reflections Section -->
+    <section id="reflections" class="reflections-section">
+        <div class="container">
+            <h2>Reflections & Learning</h2>
+            <div class="reflections-content">
+                <p>This was one of my first attempts at a dashboard. Upon completing my other projects, I thought it was appropriate to return and refurbish this one as I believed the dataset had potential. I believe I've done a much better job the second time around with a much deeper collection of insights.</p>
+                
+                <div class="before-after">
+                    <div class="before-after-item">
+                        <h3>Before</h3>
+                        <img src="../Data professionals/old-DPSpic.png" alt="Original Dashboard" class="dashboard-image">
+                    </div>
+                    <div class="before-after-item">
+                        <h3>After</h3>
+                        <img src="../Data professionals/DPSpic.png" alt="Updated Dashboard" class="dashboard-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-info">
+                    <h2>Shak Adefuwa</h2>
+                    <p class="contact-title">Data Analytics Professional</p>
+                    <p class="contact-description">
+                        Passionate about transforming data into actionable business insights. 
+                        Experienced in SQL, Power BI, and business intelligence solutions 
+                        that drive operational excellence and strategic decision-making.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:sadefuwa@gmail.com">sadefuwa@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+447399769306">07399 769 306</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/shakadefuwa/" target="_blank">linkedin.com/in/shakadefuwa</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/ShakAdefuwa" target="_blank">View My GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-photo">
+                    <img src="../myface.jpg" alt="Shak Adefuwa" class="profile-image-contact">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Data Professional Survey Analytics Project</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+Website Header: Data Professional Survey
+
+First header: Power BI Dashboard
+*insert dashboard embed link*
+
+2nd header: Survey Objecive
+
+subheader: Role Satisfaction
+
+This poll was conducted in order to better understand how data professionals feel about their current situations. Considering the recent popularity and boom in data roles, it's important to give those looking to join a field some well-needed perspective. 
+
+3rd header: Project Process
+Process Step 1: Downloaded Data from Youtube video
+Process Step 2: Imported Data into Power BI
+Process Step 3: Used PowerQuery and DAX to transform data, allowing for better visuals 
+Process Step 4: Created a Multi Page dashboard that gives insights about data analysts globally. 
+
+4th Header: Manipulating Data
+
+I used Powerquery, Measures, and DAX to manipulate my columns to open the door for more interesting insights and visuals.
+The following are a few examples:
+Created a seperate table for satisfaction scores, allowing for cleaner comparison between professions
+Used Measures that gave the name of the Country that is most or least satisfied (by comparing satisfaction totals)
+Simplified the data, combining categories/results, for example, The country column had respondents across mainland europe countries, in low volume but evenly distrubuted. It became more appropriate for my visuals if I grouped them together under Europe. 
+Strangely, the "salary" column came as a range. e.g. "80k-100k" so I used a measure that took middle value for this range, 90k, and convert it to an real number, 90,000. 
+
+5th Header: Key Insights
+insight cards1-4:
+1: Which Data professions were most well paid and most satisfied
+2: which Countries were most and least satisfied
+3: What are the demographics of respondents, insights into their education, career choices and preferences. 
+4: The data highlighted how difficult it was for respondents to define the Industry they worked in. With most opting to use "Other" and saying it's a combination of multiple. 
+
+6th Header: Reflections & Learning
+
+This was one of my first attempts at a dashboard. Upon completing my other projects, I thought it was appropriate to return and refurbish this one as I believed the dataset had potential. I believe I've done a much better job the second time around with a much deeper collection of insights. 
+
+Before: old-DPSpic (Left half of section)
+(C:\Users\sadef\Desktop\Just IT\Personal Projects\Git\Data professionals)
+After: DPSpic (Right half of section)
+(C:\Users\sadef\Desktop\Just IT\Personal Projects\Git\Data professionals)
+
+
+	
