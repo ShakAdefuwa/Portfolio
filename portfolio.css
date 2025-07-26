@@ -43,6 +43,7 @@ body {
     text-align: center;
     color: var(--white);
     position: relative;
+    margin-bottom: 0;
 }
 
 #hero::before {
@@ -124,6 +125,7 @@ body {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px var(--shadow);
+    margin-top: 0;
 }
 
 #navbar ul {
