@@ -17,11 +17,10 @@ A modern, responsive portfolio website showcasing data analysis projects and pro
    - Professional headshot
    - Name and title
    - CV download button
-   - Gradient background with subtle texture
 
 2. **Featured Projects**
    - **Ben's Pizzeria Analytics** (Live) - SQL & Power BI restaurant analysis
-   - **E-Commerce Sales Dashboard** (Coming Soon) - Power BI & Python
+   - **E-Commerce Sales Dashboard** (Live) - Power BI & Python
    - **Data Professionals Survey** (Coming Soon) - Power BI analysis
    - **Smartwatch Data Analysis** (Coming Soon) - Python health analytics
    - **Customer Contact Management** (Coming Soon) - CRM system
@@ -89,11 +88,6 @@ A modern, responsive portfolio website showcasing data analysis projects and pro
   - CRM: Custom blue gradient
   - DBT: Orange/Red gradient
 
-### Professional Experience
-- **Timeline-style experience section** with visual dots
-- **Achievement lists** with custom bullet points
-- **Location and company details** clearly displayed
-
 ### Contact Integration
 - **Direct email links** with visual feedback
 - **Phone number** as clickable tel: link
@@ -107,21 +101,6 @@ A modern, responsive portfolio website showcasing data analysis projects and pro
 - **Mobile**: 480px - 767px (Single column, condensed navigation)
 - **Small Mobile**: <480px (Minimal padding, compact text)
 
-## 🚀 Getting Started
-
-1. **Open the portfolio**:
-   ```bash
-   # Simply open index.html in your browser
-   open index.html
-   ```
-
-2. **For local development**:
-   ```bash
-   # Use a local server for best experience
-   python -m http.server 8000
-   # Then visit: http://localhost:8000
-   ```
-
 ## 🔗 Project Links
 
 - **Ben's Pizzeria Analytics**: `SQL Pizzeria/index.html` - Fully functional project showcase
@@ -134,29 +113,15 @@ A modern, responsive portfolio website showcasing data analysis projects and pro
 - **Efficient JavaScript** with event delegation and intersection observers
 - **Progressive enhancement** - works without JavaScript
 
-## 🎨 Accessibility Features
-
-- **Semantic HTML** structure for screen readers
-- **High contrast** color combinations
-- **Focus indicators** for keyboard navigation
-- **Alt text** for all images
-- **ARIA labels** where appropriate
 
 ## 🔄 Future Enhancements
 
-- [ ] Add GitHub repository links when available
 - [ ] Implement project filtering by technology
-- [ ] Add testimonials section
-- [ ] Include blog/articles section
 - [ ] Add dark mode toggle
 - [ ] Implement contact form functionality
 
-## 📄 License
-
-This portfolio is for personal use by Shak Adefuwa. The code structure can be used as a template with appropriate attribution.
-
 ---
 
-**Created by**: AI Assistant for Shak Adefuwa  
-**Last Updated**: January 2025  
+**Created by**: Shak Adefuwa  
+**Last Updated**: July 2025  
 **Technologies**: HTML5, CSS3, JavaScript ES6+ 
