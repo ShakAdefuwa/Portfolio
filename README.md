@@ -35,8 +35,16 @@ A modern, responsive portfolio website showcasing data analysis projects and pro
    - Bachelor's Degree in Chemistry (University of Reading)
 
 5. **Experience**
-   - Science Teacher (UAE) - Data visualization for parent communication
-   - Teaching Assistant (London) - Educational data management
+   - Science Teacher (UAE)
+      - Designed and delivered science lessons based on the American curriculum, including engaging presentations and differentiated content for varied proficiency levels.
+      - Analysed student performance data using Excel (functions and pivot tables) to identify trends, which informed monthly reports used in parent-teacher meetings.
+      - Conducted weekly science experiments, including rate of reaction experiments where students collected data on reaction times and outcomes. Students then analysed their findings by plotting the data in Excel, enhancing their                   understanding of scientific principles and developing their data visualisation skills.
+
+   - Teaching Assistant (London)
+      - Supported students with additional assistance and reinforced classroom instruction.
+      - Tracked student progress daily in Excel, essential for their annual student review.
+      - Collaborated with teachers to develop tailored learning strategies based on lesson outcomes.
+
 
 6. **Contact**
    - Email, phone, LinkedIn, GitHub links
