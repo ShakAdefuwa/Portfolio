@@ -52,8 +52,12 @@
             background: linear-gradient(135deg, var(--dark-color), var(--primary-color));
             color: #fff;
             text-align: center;
-            padding: 100px 0;
+            padding: 120px 0;
+            min-height: 400px;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .hero::before {
@@ -67,21 +71,30 @@
             opacity: 0.3;
         }
 
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 4rem;
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             position: relative;
             z-index: 1;
             color: #ffffff;
+            line-height: 1.2;
         }
 
         .hero p {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             font-weight: 300;
             color: #f1faee;
             position: relative;
             z-index: 1;
+            line-height: 1.6;
             max-width: 600px;
             margin: 0 auto;
         }
@@ -551,11 +564,28 @@
         }
 
         /* Footer */
-        footer {
+        .footer {
             background-color: var(--dark-color);
             color: #fff;
             text-align: center;
             padding: 30px 0;
+        }
+
+        .footer-links {
+            margin-top: 15px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            background-color: var(--primary-color);
         }
 
         /* Responsive Design */
@@ -597,8 +627,10 @@
 <body>
     <header class="hero">
         <div class="container">
-            <h1>Sales Dashboard Project</h1>
-            <p>Refurbished e-commerce analytics with enhanced business intelligence and strategic insights</p>
+            <div class="hero-content">
+                <h1>Sales Dashboard Project</h1>
+                <p>Refurbished e-commerce analytics with enhanced business intelligence and strategic insights</p>
+            </div>
         </div>
     </header>
 
@@ -843,9 +875,15 @@
         </div>
     </section>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Sales Dashboard Project</p>
+            <div class="footer-links">
+                <a href="https://shakadefuwa.github.io/portfolio/" target="_blank">
+                    <i class="fas fa-arrow-left"></i> Back to Portfolio
+                </a>
+            </div>
         </div>
     </footer>
 </body>

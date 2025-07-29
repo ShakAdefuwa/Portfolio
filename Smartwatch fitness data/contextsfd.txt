@@ -1,0 +1,43 @@
+The cleaning and visualisation of a small dataset through Python's library - Pandas
+
+The below data set shows the workout information collected by an individual's watch over the course of a month.
+(b4andafter-highlighted.png)
+On the Left is the raw data
+On the Right in the cleaned data
+
+
+Since the dataset is relatively small, I aimed to minimise data loss by avoiding unnecessary deletions. Instead, I used mean imputation to handle missing values.
+
+Initially, I filled gaps in the Calories Burned column using the overall mean.
+(see inserting-initial-mean.png)
+
+However, this approach skewed the data. For example, a 45-minute workout would appear to burn significantly more calories than similar entries. To address this, I calculated two separate means based on workout duration, allowing for a more context-aware imputation. 
+
+ 
+The mean of Duration 45 entries for missing 45 values  -  285 Calories
+The mean of Duration 60 entries for missing 60 values -  314 Calories
+(correctedmeancalc.png)
+
+Currently the two missing values were set to 305. I do not wish to include them into my mean calculations, hence why they're excluded. I double checked to ensure no real values were excluded.
+
+Replacing empty "Calories" values with their respective means
+(appropriate-mean-imputation.png)
+
+Replacing empty "Date" values with the intended dates
+(changing-format-inserting-date.png)
+
+Replacing inconsistency with suspected  value
+Round "Calories" column and Convert to Integers
+(450-to-45.png)
+Again, since the dataset is small, I seek to minimise deletion of data. 
+
+
+Can we generate a visual from this Data?
+(first-plot.png)
+	
+This code generates the following plot:
+(plotcode.png)
+
+
+This plot suggests a drop in intensity over the 30 days. Even though this dataset wasn't ideal for showcasing matplotlib's full potential, it still offered a useful experience. I thought a simpler cleaner plot would be appropriate here.
+(matplotlib.png)

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartwatch Fitness Data - Python Analysis Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Smartwatch Fitness Data Analysis</h1>
+            <p>Data cleaning and visualisation using Python's Pandas library and Matplotlib</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#data-cleaning">Data Cleaning</a></li>
+                <li><a href="#visualisation">Visualisation</a></li>
+                <li><a href="#insights">Insights</a></li>
+                <li><a href="#reflections">Reflections</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Overview Section -->
+    <section id="overview" class="overview-section">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h3>Dataset Description</h3>
+                    <p>This project analyses workout information collected by an individual's smartwatch over the course of a month. The dataset, whilst relatively small, presented several data quality challenges that provided excellent practice for data cleaning techniques using Python's Pandas library.</p>
+                    
+                    <h3>Objective</h3>
+                    <p>To demonstrate data cleaning and preparation skills by handling missing values, inconsistencies, and data quality issues whilst minimising data loss. The cleaned dataset was then visualised using Matplotlib to reveal workout patterns over time.</p>
+                </div>
+                <div class="overview-image">
+                    <img src="b4andafter-highlighted.png" alt="Before and After Data Comparison">
+                    <p class="image-caption">Raw data (left) vs cleaned data (right)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Cleaning Section -->
+    <section id="data-cleaning" class="data-cleaning-section">
+        <div class="container">
+            <h2>Data Cleaning Process</h2>
+            
+            <div class="cleaning-step">
+                <h3>1. Initial Mean Imputation Challenge</h3>
+                <div class="step-content">
+                    <div class="step-text">
+                        <p>Initially, I filled gaps in the Calories Burned column using the overall mean. However, this approach skewed the data significantly. For example, a 45-minute workout would appear to burn significantly more calories than similar entries.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="inserting-initial-mean.png" alt="Initial mean imputation">
+                        <p class="image-caption">Initial mean imputation showing data skewing</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cleaning-step">
+                <h3>2. Context-Aware Mean Calculation</h3>
+                <div class="step-content">
+                    <div class="step-text">
+                        <p>To address the skewing issue, I calculated separate means based on workout duration, allowing for more context-aware imputation:</p>
+                        <ul>
+                            <li><strong>45-minute workouts:</strong> 285 calories (mean)</li>
+                            <li><strong>60-minute workouts:</strong> 314 calories (mean)</li>
+                        </ul>
+                        <p>Missing values were excluded from mean calculations to ensure accuracy.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="Corrected-mean-calc.png" alt="Corrected mean calculation">
+                        <p class="image-caption">Context-aware mean calculation by workout duration</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cleaning-step">
+                <h3>3. Appropriate Mean Imputation</h3>
+                <div class="step-content">
+                    <div class="step-text">
+                        <p>Applied the duration-specific means to replace missing calorie values, ensuring each imputation was contextually appropriate for the workout length.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="appropriate-mean-imputation.png" alt="Appropriate mean imputation">
+                        <p class="image-caption">Replacing missing values with duration-specific means</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cleaning-step">
+                <h3>4. Date Formatting and Data Consistency</h3>
+                <div class="step-content">
+                    <div class="step-text">
+                        <p>Addressed missing date values and corrected data inconsistencies. Since the dataset was small, I prioritised minimising data loss by correcting rather than deleting problematic entries.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="Changing-format-inserting-date.png" alt="Date formatting">
+                        <p class="image-caption">Inserting missing dates and formatting corrections</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cleaning-step">
+                <h3>5. Final Data Corrections</h3>
+                <div class="step-content">
+                    <div class="step-text">
+                        <p>Corrected obvious data entry errors (e.g., 450 calories likely meant 45 minutes) and rounded calorie values to integers for consistency.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="450-to-45.png" alt="Data correction">
+                        <p class="image-caption">Correcting suspected data entry errors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visualisation Section -->
+    <section id="visualisation" class="visualisation-section">
+        <div class="container">
+            <h2>Data Visualisation</h2>
+
+            <div class="visualisation-step">
+                <h3>Initial Plot Generation</h3>
+                <div class="step-content">
+                    <div class="step-text">
+                        <p>After cleaning the data, I began exploring visualisation options using Matplotlib. The first step was generating a basic plot to understand the data patterns and workout trends over the 30-day period.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="First-plot.png" alt="First plot generation">
+                        <p class="image-caption">Initial plot exploring the cleaned dataset</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visualisation-step">
+                <h3>Plot Code Implementation</h3>
+                <div class="step-content">
+                    <div class="step-text">
+                        <p>The code implementation demonstrates the use of Matplotlib for creating visualisations from the cleaned smartwatch data. This provided valuable experience in translating data insights into visual representations.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="plotcode.png" alt="Matplotlib code implementation">
+                        <p class="image-caption">Python code for generating the matplotlib visualisation</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visualisation-step">
+                <h3>Final Matplotlib Visualisation</h3>
+                <div class="step-content">
+                    <div class="step-text">
+                        <p>The final plot revealed a drop in workout intensity over the 30-day period. Even though this dataset wasn't ideal for showcasing Matplotlib's full potential, it provided valuable experience in creating clean, informative plots from real-world data.</p>
+
+                        <p>I opted for a simpler, cleaner plot design that was appropriate for the dataset size and clearly communicated the key trends in the fitness data.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="Matplotlib.png" alt="Final matplotlib visualisation">
+                        <p class="image-caption">Final cleaned matplotlib visualisation showing workout trends</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insights Section -->
+    <section id="insights" class="insights-section">
+        <div class="container">
+            <h2>Key Insights</h2>
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <i class="fas fa-trending-down"></i>
+                    <h3>Workout Intensity Decline</h3>
+                    <p>The analysis revealed a drop in workout intensity over the 30-day period, suggesting potential motivation or fatigue patterns.</p>
+                </div>
+                <div class="insight-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Data Quality Challenges</h3>
+                    <p>Small datasets require careful handling of missing values to avoid significant data loss whilst maintaining analytical integrity.</p>
+                </div>
+                <div class="insight-card">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Context-Aware Imputation</h3>
+                    <p>Duration-specific mean imputation proved more accurate than overall mean imputation for calorie data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reflections Section -->
+    <section id="reflections" class="reflections-section">
+        <div class="container">
+            <h2>Project Reflections</h2>
+            <div class="reflections-content">
+                <h3>Technical Skills Developed</h3>
+                <ul>
+                    <li><strong>Pandas Data Manipulation:</strong> Gained experience with data cleaning, missing value imputation, and data type conversions</li>
+                    <li><strong>Problem-Solving:</strong> Developed context-aware solutions for data quality issues</li>
+                    <li><strong>Matplotlib Visualisation:</strong> Created clean, informative plots despite dataset limitations</li>
+                    <li><strong>Data Quality Assessment:</strong> Learned to identify and address various data inconsistencies</li>
+                </ul>
+                
+                <h3>Key Learnings</h3>
+                <p>This project reinforced the importance of understanding your data before applying cleaning techniques. The initial mean imputation approach highlighted how seemingly logical solutions can introduce bias. The experience of working with a small, imperfect dataset provided valuable practice in making data-driven decisions about cleaning strategies.</p>
+                
+                <h3>Future Applications</h3>
+                <p>The techniques learned in this project - particularly context-aware imputation and careful handling of small datasets - are directly applicable to real-world data analysis scenarios where data quality issues are common.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Shak Adefuwa</h2>
+                    <h3>Data Analytics Professional</h3>
+                    <p>Passionate about transforming data into actionable business insights. Experienced in SQL, Power BI, and business intelligence solutions that drive operational excellence and strategic decision-making.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:sadefuwa@gmail.com">sadefuwa@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+447399769306">07399 769 306</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/shakadefuwa/" target="_blank">linkedin.com/in/shakadefuwa</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-photo">
+                    <img src="../myface.jpg" alt="Shak Adefuwa" class="profile-image-contact">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Smartwatch Fitness Data Analysis</p>
+            <div class="footer-links">
+                <a href="https://shakadefuwa.github.io/portfolio/" target="_blank">
+                    <i class="fas fa-arrow-left"></i> Back to Portfolio
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
